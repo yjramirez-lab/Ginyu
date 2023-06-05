@@ -29,7 +29,7 @@ body {
   
   .image-container {
     flex: 1 0 100%; /* Take up full width initially */
-    background: url('/descargar_\(1\)-transformed.jpeg') no-repeat center center;
+    background: url('/images/charity-doodle-vector-people-donating-things_53876-143486.webp') no-repeat center center;
     background-size: cover;
   }
   
