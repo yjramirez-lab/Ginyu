@@ -1,0 +1,4 @@
+[[redirects]]
+from = "/*"
+to = "/donation.html"
+status = 200
