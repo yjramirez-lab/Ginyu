@@ -1,79 +1,80 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: url('/images/charity-doodle-vector-people-donating-things_53876-143486.webp') no-repeat center center fixed;
-    background-size: cover;
-    background-position: top;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-  
-  .container {
-    width: 100%;
-    max-width: 500px;
-    background: rgba(255, 255, 255, 0.8);
-    /* Add a semi-transparent background color for better readability */
-    padding: 20px;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("/images/descargar_\(1\)-transformed.jpeg") no-repeat center
+    center fixed;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.8);
+  /* Add a semi-transparent background color for better readability */
+  padding: 20px;
+}
+
+.form-container {
+  flex: 1 0 100%; /* Take up full width initially */
+  max-width: 500px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  /* Add a semi-transparent background color for better readability */
+}
+
+.image-container {
+  flex: 1 0 100%; /* Take up full width initially */
+  background: url("/images/descargar_\(1\)-transformed.jpeg") no-repeat center
+    center;
+  background-size: cover;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
   .form-container {
-    flex: 1 0 100%; /* Take up full width initially */
-    max-width: 500px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.8);
-    /* Add a semi-transparent background color for better readability */
+    flex-basis: 100%; /* Take up full width on smaller screens */
+    max-width: none;
+    margin-bottom: 20px;
   }
-  
+
   .image-container {
-    flex: 1 0 100%; /* Take up full width initially */
-    background: url('/images/charity-doodle-vector-people-donating-things_53876-143486.webp') no-repeat center center;
-    background-size: cover;
+    flex-basis: 100%; /* Take up full width on smaller screens */
   }
-  
-  /* Media query for screens smaller than 768px */
-  @media (max-width: 768px) {
-    .form-container {
-      flex-basis: 100%; /* Take up full width on smaller screens */
-      max-width: none;
-      margin-bottom: 20px;
-    }
-  
-    .image-container {
-      flex-basis: 100%; /* Take up full width on smaller screens */
-    }
-  }
-  
-  label {
-    display: block;
-    margin-top: 15px;
-    font-weight: bold;
-    color: #555;
-  }
-  
-  textarea {
-    width: 50%;
-    resize: vertical;
-    height: 30px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-  
-  .submit-btn {
-    margin-top: 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .submit-btn:hover {
-    background-color: #45a049;
-  }
-  
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #555;
+}
+
+textarea {
+  width: 50%;
+  resize: vertical;
+  height: 30px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
