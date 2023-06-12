@@ -19,6 +19,9 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .title h1 {
@@ -28,16 +31,17 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 2px;
+  margin: 0;
 }
 
 /* Estilos del contenedor principal */
-.container,
-.h1-container,
-.form-container {
-  width: 100%;
-  max-width: 500px;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 20px;
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+  width: fit-content;
 }
 
 .h1-container {
@@ -46,28 +50,27 @@ body {
 
 /* Estilos de elementos específicos */
 .form-container {
-  flex: 1 1 100%;
-  background: rgba(255, 255, 255, 0.8);
+  width: calc(50% - 10px);
+  /* Otros estilos para el formulario */
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 5px;
 }
 
 .image-container {
-  flex: 1 1 100%;
-  background: url("https://img.freepik.com/free-vector/charity-doodle-vector-people-donating-things_53876-140951.jpg?w=2000")
-    no-repeat center center;
-  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 250px;
+  margin-left: 100px;
 }
 
-/* Estilos responsivos */
-@media (max-width: 768px) {
-  .form-container,
-  .image-container {
-    flex-basis: 100%;
-    max-width: none;
-  }
+.photo {
+}
 
-  .form-container {
-    margin-bottom: 20px;
-  }
+.photo img {
+  max-width: 500px; /* Ajusta el ancho según tus necesidades */
+  height: auto;
 }
 
 /* Estilos generales de formularios */
@@ -155,4 +158,81 @@ h1 {
   background-color: #0056b3;
 }
 
-/* Estilos específicos del carrusel */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-container {
+    width: 100%;
+    max-width: none;
+  }
+
+  .image-container {
+    margin-top: 50px;
+    margin-left: 0;
+  }
+}
+
+.image-container-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-inner {
+  height: 500px; /* Ajusta la altura según tus necesidades */
+}
+
+.carousel-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-inner {
+  height: 650px; /* Ajusta la altura según tus necesidades */
+}
+
+.carousel-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.carousel-control-prev-icon:before,
+.carousel-control-next-icon:before {
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0.969l-4.25 4.25 4.25 4.25 0.719-0.719-3.5-3.5 3.5-3.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 8 8'%3E%3Cpath d='M2.969 0.969l-0.719 0.719 3.5 3.5-3.5 3.5 0.719 0.719 4.25-4.25-4.25-4.25z'/%3E%3C/svg%3E");
+}
