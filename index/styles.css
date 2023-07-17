@@ -65,9 +65,6 @@ body {
   margin-left: 100px;
 }
 
-.photo {
-}
-
 .photo img {
   max-width: 500px; /* Ajusta el ancho según tus necesidades */
   height: auto;
